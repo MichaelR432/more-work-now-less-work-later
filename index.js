@@ -32,11 +32,6 @@ function promptUser() {
         },
         {
             type: 'input',
-            name: 'applicationTitle',
-            message: 'Type in your application title?'
-        },
-        {
-            type: 'input',
             name: 'contributorGuidelines',
             message: 'Add in contributor guidelines for open sour additions.'
         },
