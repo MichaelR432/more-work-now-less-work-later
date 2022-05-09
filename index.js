@@ -6,7 +6,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // TODO: Create an array of questions for user input
-// const questions = [];
 
 function promptUser() {
     return inquirer.prompt([
@@ -87,11 +86,19 @@ function promptUser() {
     ]);
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+    try {
+        const data = await promptUser();
+        const newMarkDown = generateMarkdown(data);
+
+        await writeFileAsync('README.md', newMarkDown, 'utf-8');
+        console.log('Open your new README.md file.');
+    }
+    catch(error) {
+        console.log(error);
+    }
+}
 
 // Function call to initialize app
 init();
