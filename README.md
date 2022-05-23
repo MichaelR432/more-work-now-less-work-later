@@ -37,7 +37,7 @@
   
   ## Description 
 
-  An terminal base application to generate a professional ReadME 
+  An terminal base application to generate a professional ReadME.
 
 
   ## Installation 
@@ -47,7 +47,7 @@
 
   ## Usage 
 
-  Answer each question in the terminal untill a ReadME is generat 
+  Answer each question in the terminal untill a ReadME is generated.
 
 
   ## Contributions & Guidelines 
