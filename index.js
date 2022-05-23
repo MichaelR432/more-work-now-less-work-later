@@ -33,7 +33,7 @@ function promptUser() {
         {
             type: 'input',
             name: 'contributorGuidelines',
-            message: 'Add in contributor guidelines for open sour additions.'
+            message: 'Add in contributor guidelines for open your additions.'
         },
         {
             type: 'input',
